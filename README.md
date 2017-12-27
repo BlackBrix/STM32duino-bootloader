@@ -1,6 +1,7 @@
 this repo is forked from [rogerclarkmelbourne/STM32duino-bootloader](https://github.com/rogerclarkmelbourne/STM32duino-bootloader)  
   
---
+----  
+
 the following readme.md is the original one from the original repo mentioned above  
 but is outdated / obsolete in some of the listed points (I will mark these later with a ~~strikethrough~~)  
   
