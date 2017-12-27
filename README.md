@@ -1,3 +1,18 @@
+the following readme.md is the original one from the original repo on https://github.com/rogerclarkmelbourne/STM32duino-bootloader  
+but is outdated / obsolete in some of the listed points (I will mark these later with a ~~strikethrough~~)  
+  
+I forked this repo to make a bootloader binary for a new board with
+* STM32F103VET6 (512kB Flash / 64kB RAM / 100pin)
+* no "Maple USB reset hardware"
+* no buttons 
+* LED on PC9 
+* 16MHz ext. crystal
+
+In the code this board is called "BLACKBRIX_PLC" because this board is actually the mainboard of a mini-PLC (DIN rail / "smart-relay")  
+
+
+----  
+
 # STM32duino-bootloader
 
 Please Note. This code does not work with all STM32F103 Boards
