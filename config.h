@@ -357,6 +357,16 @@
     /* CRISTAL 12MHz */
     #define XTAL12M     1
 
+#elif defined TARGET_BLACKBRIX_PLC
+
+    // no HAS_MAPLE_HARDWARE ...
+    #define LED_BANK GPIOC
+    #define LED_PIN 9
+    #define LED_ON_STATE 0
+    // no BUTTON...-stuff
+    // no USB_DISC...-stuff
+    // 16MHz crystal:
+    #define XTAL16M     1
 
 #else
     #error "No config for this target"
