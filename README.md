@@ -4,6 +4,7 @@ this repo is forked from [rogerclarkmelbourne/STM32duino-bootloader](https://git
 
 the following readme.md is the original one from the original repo mentioned above  
 but is outdated / obsolete in some of the listed points (I will mark these later with a ~~strikethrough~~)  
+(see this explanation as well: --> https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/stm32duino-bootloader )  
   
 I forked this repo to make a bootloader binary for a new board with
 * STM32F103VET6 (512kB Flash / 64kB RAM / 100pin)
