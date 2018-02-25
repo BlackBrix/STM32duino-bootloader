@@ -117,9 +117,10 @@ in the repo you can see two folders for the compiled binaries: *"binaries"* and 
 In *"bootloader_only_binaries"* you find the pure stand-alone bootloader.  
 
 In the directory *"binaries"* you find the combined bootloader and dummy sketch (from here: *"../sketch_combiner/congratulations_sketch/"*) which are merged together with the *"/sketch_combiner/bin_merge_tool/mergesketch.exe"* (Windows only), like you can see in the *"merge_sketch_and_bootloaders.bat"*.  
+The main purpose of this was to combine the bootloader with a sketch, as the bootloader on its own, when first installed, seems to confuse a lot of people as there isn't a serial device showing up.  
 
 Original author [rogerclarkmelbourne](https://github.com/rogerclarkmelbourne) wrote:  
-*"See http://www.stm32duino.com/viewtopic.php?t=2376 it explains why I had to make binaries with a built in sketch, as most newbie Arduino users were confused that the Bootloader does not appear as a serial device when they first installed it.  
+*"See http://www.stm32duino.com/viewtopic.php?t=2376: it explains why I had to make binaries with a built in sketch, as most newbie Arduino users were confused that the Bootloader does not appear as a serial device when they first installed it.  
 For legacy linking issues, I had to use the "binaries" folder to contain the combined sketch and bootloader.  
 This is not ideal but it saves loads posts to here and to the forum, where people want the combined bootloader and dummy sketch and install the raw bootloader."*  
 
