@@ -2,10 +2,7 @@ this repo is forked from [rogerclarkmelbourne/STM32duino-bootloader](https://git
   
 ----  
 
-the following readme.md is the original one from the original repo mentioned above  
-but is outdated / obsolete in some of the listed points (I will mark these later with a ~~strikethrough~~)  
-(see this explanation as well: --> https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/stm32duino-bootloader )  
-  
+
 I forked this repo to make a bootloader binary for a new board with
 * STM32F103VET6 (512kB Flash / 64kB RAM / 100pin)
 * no "Maple USB reset hardware"
@@ -113,8 +110,25 @@ For generic boards (ones that don't have `#define HAS_MAPLE_HARDWARE`), there is
 
 2. Additional DFU AltID upload type was added, which allows the sketch to be loaded at 0x8002000 instead of 0x8005000 (due to reduced size of the bootloader itself). **Note** upload to 0x8005000 was retained for backwards compatibility.
 
+## Combined bootloader and dummy sketch
+
+in the repo you can see two folders for the compiled binaries: *"binaries"* and *"bootloader_only_binaries"*.  
+
+In *"bootloader_only_binaries"* you find the pure stand-alone bootloader.  
+
+In the directory *"binaries"* you find the combined bootloader and dummy sketch (from here: *"../sketch_combiner/congratulations_sketch/"*) which are merged together with the *"/sketch_combiner/bin_merge_tool/mergesketch.exe"* (Windows only), like you can see in the *"merge_sketch_and_bootloaders.bat"*.  
+
+Original author [rogerclarkmelbourne](https://github.com/rogerclarkmelbourne) wrote:  
+*"See http://www.stm32duino.com/viewtopic.php?t=2376 it explains why I had to make binaries with a built in sketch, as most newbie Arduino users were confused that the Bootloader does not appear as a serial device when they first installed it.  
+For legacy linking issues, I had to use the "binaries" folder to contain the combined sketch and bootloader.  
+This is not ideal but it saves loads posts to here and to the forum, where people want the combined bootloader and dummy sketch and install the raw bootloader."*  
+
+## WIKI
+
+--> https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/stm32duino-bootloader )  
+
 ## Feedback
 
-If you have questions about the bootloader, please raise an issue and I will attempt to answer it.
+If you have questions about the bootloader, please raise an issue in the original repo: [rogerclarkmelbourne/STM32duino-bootloader](https://github.com/rogerclarkmelbourne/STM32duino-bootloader)
 
 
