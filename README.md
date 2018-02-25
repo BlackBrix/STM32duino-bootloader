@@ -21,7 +21,7 @@ In the code this board is called "BLACKBRIX_PLC" because this board is actually 
 
 *Note:** not all GCC versions work. Reported gcc-arm-none-eabi versions that work are: 4.8, 5.4, 6.0, 7.2. YMMV.
 
-This is a source of bootloader for STM32F103 boards, for use with the Arduino_STM32 repo and the Arduino IDE. It allows a board to be programmed directly via USB, eliminating the need for a separate programmer hardware.
+This is a source of bootloader for STM32F103 boards, for use with the [Arduino_STM32](https://github.com/rogerclarkmelbourne/Arduino_STM32) repo and the [Arduino IDE](https://www.arduino.cc/en/Main/Software). It allows a board to be programmed directly via USB, eliminating the need for a separate programmer hardware.
 
 ## Changes
 
