@@ -19,7 +19,7 @@ In the code this board is called "BLACKBRIX_PLC" because this board is actually 
 
 **Note:** this code does not work with all STM32F103 Boards.
 
-*Note:** not all GCC versions work. Reported gcc-arm-none-eabi versions that work are: 4.8, 5.4, 6.0, 7.2. YMMV.
+**Note:** not all GCC versions work. Reported gcc-arm-none-eabi versions that work are: 4.8, 5.4, 6.0, 7.2. YMMV.
 
 This is a source of bootloader for STM32F103 boards, for use with the [Arduino_STM32](https://github.com/rogerclarkmelbourne/Arduino_STM32) repo and the [Arduino IDE](https://www.arduino.cc/en/Main/Software). It allows a board to be programmed directly via USB, eliminating the need for a separate programmer hardware.
 
@@ -95,14 +95,15 @@ Let's go over the above.
 1. Boards which have the Maple USB reset hardware need to define `HAS_MAPLE_HARDWARE`.
 
 2. In config.h there are per-board definitions for:
-* `LED_BANK`: GPIO Port (e.g. `GPIOA`, `GPIOB`, etc.)
-* `LED_PIN`: pin in that port (e.g. `1`)
-* `LED_ON_STATE`: whether the LED is lit when the pin is high (1) or low (0). This is because some generic boards have the LED between `Vcc` and the pin, hence are on when the `LED_PIN` is LOW.
+   * `LED_BANK`: GPIO Port (e.g. `GPIOA`, `GPIOB`, etc.)
+   * `LED_PIN`: pin in that port (e.g. `1`)
+   * `LED_ON_STATE`: whether the LED is lit when the pin is high (1) or low (0). This is because some generic boards have the LED between `Vcc` and the pin, hence are on when the `LED_PIN` is LOW.
 
 3. Boards with Maple hardware have an extra button (in addition to "Reset") and a special USB reset/disconnect hardware circuit. Such boards need a few additional defines, namely:
-** `BUTTON_BANK` and `BUTTON_PIN` for the extra button;
-** `USB_DISC_BANK` and `USB_DISC_PIN` for the USB disconnect circuit.
-For generic boards (ones that don't have `#define HAS_MAPLE_HARDWARE`), there is no need to define all this.
+   * `BUTTON_BANK` and `BUTTON_PIN` for the extra button;
+   * `USB_DISC_BANK` and `USB_DISC_PIN` for the USB disconnect circuit.
+   
+   For generic boards (ones that don't have `#define HAS_MAPLE_HARDWARE`), there is no need to define all this.
 
 ## Other improvements on the original Maple bootloader
 
