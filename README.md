@@ -113,11 +113,11 @@ Let's go over the above.
 
 ## Combined bootloader and dummy sketch
 
-in the repo you can see two folders for the compiled binaries: *"binaries"* and *"bootloader_only_binaries"*.  
+in the repo you can see two directories for the compiled binaries: `binaries` and `bootloader_only_binaries`.  
 
-In *"bootloader_only_binaries"* you find the pure stand-alone bootloader.  
+In `bootloader_only_binaries` you find the pure stand-alone bootloader.  
 
-In the directory *"binaries"* you find the combined bootloader and dummy sketch (from here: *"../sketch_combiner/congratulations_sketch/"*) which are merged together with the *"/sketch_combiner/bin_merge_tool/mergesketch.exe"* (Windows only), like you can see in the *"merge_sketch_and_bootloaders.bat"*.  
+In the directory `binaries` you find the combined bootloader and dummy sketch (from here: `../sketch_combiner/congratulations_sketch/`) which are merged together with the `/sketch_combiner/bin_merge_tool/mergesketch.exe` (Windows only), like you can see in the `merge_sketch_and_bootloaders.bat`.  
 The main purpose of this was to combine the bootloader with a sketch, as the bootloader on its own, when first installed, seems to confuse a lot of people as there isn't a serial device showing up.  
 
 Original author [rogerclarkmelbourne](https://github.com/rogerclarkmelbourne) wrote:  
