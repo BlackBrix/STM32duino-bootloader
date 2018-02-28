@@ -127,7 +127,7 @@ This is not ideal but it saves loads posts to here and to the forum, where peopl
 
 ## WIKI
 
---> https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/stm32duino-bootloader )  
+--> https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/stm32duino-bootloader  
 
 ## Feedback
 
